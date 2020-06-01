@@ -30,6 +30,7 @@ class HealthForm(FormAction):
             "confirm_exercise": [
                 self.from_intent(intent="affirm", value=True),
                 self.from_intent(intent="deny", value=False),
+                self.from_intent(intent="affirm_exercise", value=True),
             ],
             "exercise": [
                 self.from_entity(entity="exercise"),

@@ -62,14 +62,16 @@
 - am I talking to a bot?
 - am I talking to a human?
 
-## intent:inform
+## intent:affirm_exercise
 - Yes, I went for a [run](exercise)
 - uh huh an hour of [yoga](exercise)
+- yep, I went for a [hike](exercise)
+
+## intent:inform
 - I went [swimming](exercise)
 - Just took the dog for a [walk](exercise)
 - Took a [spin class](exercise)
 - Did some [boxing](exercise)
-- yep, I went for a [hike](exercise)
 - I went [rock climbing](exercise)
 - played some [basketball](exercise)
 - a full [8 hours](sleep)
@@ -84,6 +86,10 @@
 - [About right](stress)
 - [Pretty low](stress) right now
 - [medium](stress)
+  
+## intent:goal_comment
+  
+## intent:diet_comment
 - i ate pretty healthy overall
 - lots of fruits and vegetables
 - I ate a salad
