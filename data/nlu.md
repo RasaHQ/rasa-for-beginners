@@ -74,8 +74,8 @@
 - Did some [boxing](exercise)
 - [rock climbing](exercise)
 - played some [basketball](exercise)
-- played [football]
-- I did a [workout] video
+- played [football](exercise)
+- I did a [workout](exercise) video
 
 ## intent:inform
 - a full [8 hours](sleep)
