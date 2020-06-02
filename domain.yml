@@ -6,6 +6,8 @@ intents:
   - bot_challenge
   - inform
   - thankyou
+  - affirm_exercise
+  - health_comment
 
 entities:
   - exercise
@@ -17,7 +19,7 @@ responses:
   - text: "Hi! It's time for your daily wellness check. Tracking healthy habits is a great way to measure your progress over time. Would you like to answer a few questions about your health?"
 
   utter_goodbye:
-  - text: "Bye"
+  - text: "See you tomorrow. Bye!"
 
   utter_iamabot:
   - text: "I am a bot, powered by Rasa."
@@ -42,6 +44,8 @@ responses:
              - Stuck to a healthy diet?: {diet}\n
              - Stress level: {stress}\n
              - Goal: {goal}"
+  utter_no_worries:
+    - text: "No problem :)"
 
 slots:
   confirm_exercise:

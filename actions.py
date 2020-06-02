@@ -36,18 +36,17 @@ class HealthForm(FormAction):
                 self.from_entity(entity="exercise"),
             ],
             "diet": [
+                self.from_text(intent="health_comment"),
                 self.from_text(intent="affirm"),
                 self.from_text(intent="deny"),
-                self.from_text(intent="inform"),
             ],
             "stress": [
                 self.from_entity(entity="stress"),
-                self.from_text(intent="inform"),
                 self.from_text(intent="affirm"),
                 self.from_text(intent="deny"),
             ],
             "goal": [
-                self.from_text(intent="inform"),
+                self.from_text(intent="health_comment"),
             ],
         }
 
