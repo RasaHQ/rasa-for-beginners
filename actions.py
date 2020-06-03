@@ -40,13 +40,8 @@ class HealthForm(FormAction):
                 self.from_text(intent="affirm"),
                 self.from_text(intent="deny"),
             ],
-            "stress": [
-                self.from_entity(entity="stress"),
-                self.from_text(intent="affirm"),
-                self.from_text(intent="deny"),
-            ],
             "goal": [
-                self.from_text(intent="health_comment"),
+                self.from_text(intent=None),
             ],
         }
 
