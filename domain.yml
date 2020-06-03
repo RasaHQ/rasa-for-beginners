@@ -6,8 +6,6 @@ intents:
   - bot_challenge
   - inform
   - thankyou
-  - affirm_exercise
-  - health_comment
 
 entities:
   - exercise

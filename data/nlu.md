@@ -63,7 +63,13 @@
 - am I talking to a bot?
 - am I talking to a human?
 
-## intent:affirm_exercise
+## intent:inform
+- a full [8 hours](sleep)
+- only [four hours](sleep)
+- about [six hours](sleep)
+- [low](stress)
+- [medium](stress)
+- [high](stress) stress right now
 - Yes, I went for a [run](exercise)
 - uh huh an hour of [yoga](exercise)
 - yep, I went for a [hike](exercise)
@@ -76,23 +82,6 @@
 - played some [basketball](exercise)
 - played [football](exercise)
 - I did a [workout](exercise) video
-
-## intent:inform
-- a full [8 hours](sleep)
-- only [four hours](sleep)
-- about [six hours](sleep)
-- [not enough](sleep)
-- I'm feeling [really stressed](stress) right now
-- I'm feeling [pretty good](stress)
-- [Zero](stress) stress right now
-- Way [too high](stress)
-- [About right](stress)
-- [Pretty low](stress) right now
-- [medium](stress)
-- [moderate](stress)
-- [manageable](stress)
-  
-## intent:health_comment
 - I want to get up early and go for a run
 - Be more patient with my family
 - Try to be a better friend
@@ -112,3 +101,4 @@
 - too much junk food
 - a lot of carbs
 - too much fatty food
+- Get more exercise
