@@ -30,23 +30,19 @@ class HealthForm(FormAction):
             "confirm_exercise": [
                 self.from_intent(intent="affirm", value=True),
                 self.from_intent(intent="deny", value=False),
-                self.from_intent(intent="affirm_exercise", value=True),
+                self.from_intent(intent="inform", value=True),
             ],
-            "exercise": [
-                self.from_entity(entity="exercise"),
+            "sleep": [
+                self.from_entity(entity="sleep"),
+                self.from_intent(intent="deny", value="None"),
             ],
             "diet": [
-                self.from_text(intent="health_comment"),
-                self.from_text(intent="affirm"),
-                self.from_text(intent="deny"),
-            ],
-            "stress": [
-                self.from_entity(entity="stress"),
+                self.from_text(intent="inform"),
                 self.from_text(intent="affirm"),
                 self.from_text(intent="deny"),
             ],
             "goal": [
-                self.from_text(intent="health_comment"),
+                self.from_text(intent="inform"),
             ],
         }
 
