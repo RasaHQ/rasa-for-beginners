@@ -31,6 +31,20 @@
     - form{"name": null}
     - utter_goodbye
 
+## survey continue
+* greet
+    - utter_greet
+* affirm
+    - health_form
+    - form{"name": "health_form"}
+* out_of_scope
+    - utter_ask_continue
+* affirm
+    - health_form
+    - form{"name": "health_form"}
+    - form{"name": null}
+    - utter_slots_values
+
 ## no survey
 * greet
     - utter_greet
