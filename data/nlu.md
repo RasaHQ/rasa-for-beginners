@@ -35,21 +35,16 @@
 - no
 - never
 - I don't think so
-- don't like that
 - no way
 - not really
 - none
-- I don't want to tell you that
-- none of your business
 - absolutely not
 - no thanks
-- none
 - didn't do any
 - no I didn't
 - could have been better
 - not great
 - nope
-- could be better
 
 ## intent:thankyou
 - okay great thanks
@@ -102,3 +97,22 @@
 - a lot of carbs
 - too much fatty food
 - Get more exercise
+
+## intent:out_of_scope
+- that's not what I want to do
+- wait stop
+- you're no help
+- this is no help at all
+- how old are you
+- I want to order a pizza
+- tell me the weather
+- this isn't working
+- I already told you that
+- don't like that
+- I don't want to tell you that
+- none of your business
+- that's not right
+- stop asking
+- nevermind
+- I want to do something else
+- I changed my mind

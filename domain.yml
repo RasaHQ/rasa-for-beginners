@@ -6,6 +6,7 @@ intents:
   - bot_challenge
   - inform
   - thankyou
+  - out_of_scope
 
 entities:
   - exercise
@@ -51,6 +52,8 @@ responses:
             - Goal: {goal}"
   utter_no_worries:
   - text: "No problem :)"
+  utter_ask_continue:
+  - text: "Sorry, I don't quite understand. Do you want to continue?"
 
 slots:
   confirm_exercise:
