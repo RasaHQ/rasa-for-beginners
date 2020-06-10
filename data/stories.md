@@ -41,7 +41,6 @@
     - utter_ask_continue
 * affirm
     - health_form
-    - form{"name": "health_form"}
     - form{"name": null}
     - utter_slots_values
 
