@@ -15,4 +15,4 @@ This is a simple Rasa bot that uses a form to create a daily log of health infor
 
 ``rasa shell``
 
-
+![wellness-bot-conversation](https://github.com/karen-white/wellness-check-bot/blob/master/images/bot_conversations.png?raw=true)
