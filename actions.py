@@ -10,31 +10,39 @@ import requests
 import json
 import os
 
+load_dotenv()
+
 airtable_api_key=os.getenv("AIRTABLE_API_KEY")
 base_id=os.getenv("BASE_ID")
 table_name=os.getenv("TABLE_NAME")
 
 def create_health_log(confirm_exercise, exercise, sleep, diet, stress, goal):
-    request_url=urljoin("https://api.airtable.com/v0", base_id, table_name)
+    request_url=f"https://api.airtable.com/v0/{base_id}/{table_name}"
 
     headers = {
         "Content-Type": "application/json",
         "Accept": "application/json",
-        "Authorization": "Bearer {}'.format(airtable_api_key)'",
+        "Authorization": f"Bearer {airtable_api_key}",
     }  
     data = {
-  "fields": {
-    "Exercised?": confirm_exercise,
-    "Type of exercise": exercise,
-    "Amount of sleep": sleep,
-    "Stress": stress,
-    "Diet": diet,
-    "Goal": goal,
-  }
-}
-    response = requests.post(
-        request_url, headers=headers, data=json.dumps(data)
-    )
+        "fields": {
+            "Exercised?": confirm_exercise,
+            "Type of exercise": exercise,
+            "Amount of sleep": sleep,
+            "Stress": stress,
+            "Diet": diet,
+            "Goal": goal,
+        }
+    }
+    print(data)
+    try:
+        response = requests.post(
+            request_url, headers=headers, data=json.dumps(data)
+        )
+        response.raise_for_status()
+    except requests.exceptions.HTTPError as err:
+        raise SystemExit(err)
+    
     return response
 
     print(response.status_code)
