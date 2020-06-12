@@ -1,6 +1,5 @@
 from typing import Any, Text, Dict, List, Union
 from dotenv import load_dotenv
-from urllib.parse import urljoin
 
 from rasa_sdk import Action, Tracker
 from rasa_sdk.executor import CollectingDispatcher
@@ -34,7 +33,6 @@ def create_health_log(confirm_exercise, exercise, sleep, diet, stress, goal):
             "Goal": goal,
         }
     }
-    print(data)
     try:
         response = requests.post(
             request_url, headers=headers, data=json.dumps(data)
@@ -44,7 +42,6 @@ def create_health_log(confirm_exercise, exercise, sleep, diet, stress, goal):
         raise SystemExit(err)
     
     return response
-
     print(response.status_code)
 
 class HealthForm(FormAction):
