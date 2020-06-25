@@ -64,7 +64,7 @@
 - about [six hours](sleep)
 - [low](stress)
 - [medium](stress)
-- [high](stress) stress right now
+- [high](stress)
 - Yes, I went for a [run](exercise)
 - uh huh an hour of [yoga](exercise)
 - yep, I went for a [hike](exercise)

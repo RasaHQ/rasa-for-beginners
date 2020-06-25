@@ -32,18 +32,11 @@ responses:
   utter_ask_diet:
   - text: "Did you stick to a healthy diet 🥦  yesterday?"
   utter_ask_stress:
-  - text: "What is your stress level right now 🧘 ?"
-    buttons:
-      - title: "low"
-        payload: '/inform{"stress": "low"}'
-      - title: "medium"
-        payload: '/inform{"stress": "medium"}'
-      - title: "high"
-        payload: '/inform{"stress": "high"}'
+  - text: "Is your stress level low, medium, or high 🧘 ?"
   utter_ask_goal:
   - text: "Setting goals - even small ones - is a great way to focus your day. What do you want to accomplish today 🥇 ?"
   utter_slots_values:
-  - text: "You've submitted the following answers:\n
+  - text: "Here's your daily wellness log:\n
             - Exercised?: {confirm_exercise}\n
             - Type of exercise: {exercise}\n
             - Sleep: {sleep}\n

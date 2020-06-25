@@ -109,6 +109,6 @@ class HealthForm(FormAction):
                 goal=goal
             )
 
-        dispatcher.utter_message("Thanks, great job!")
+        dispatcher.utter_message("Thanks, your answers have been recorded!")
         return []
 
