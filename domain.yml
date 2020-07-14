@@ -7,6 +7,9 @@ intents:
   - inform
   - thankyou
   - out_of_scope
+  - ask_lower_stress
+  - ask_eat_healthy
+  - ask_exercise
 
 entities:
   - exercise
@@ -47,6 +50,15 @@ responses:
   - text: "No problem :)"
   utter_ask_continue:
   - text: "Sorry, I don't quite understand. Do you want to continue?"
+
+  utter_stress_info:
+  - text: "It's ok to feel overwhelmed at times. Try to set realistic expectations and exercise time management techniques, like dividing large tasks into more manageable pieces. Relaxation techniques, like deep breathing and meditation, can also be beneficial."
+
+  utter_exercise_info:
+  - text: "Most healthy adults should aim to get about 150 min of moderate exercise per week. This includes activities like a brisk walk or yard work."
+
+  utter_diet_info:
+  - text: "A healthy diet includes fruits and vegetables, whole grains, dairy, lean protein, and plant-based fats. While there is room in a healthy diet for treats, added sugar should be eaten sparingly. Aim for a variety of foods, and balance."
 
 slots:
   confirm_exercise:
