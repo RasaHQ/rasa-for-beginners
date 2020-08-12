@@ -14,14 +14,18 @@ It uses a form to collect a user's daily health information and saves it to an A
 
 3. Install Rasa Open Source: https://rasa.com/docs/rasa/user-guide/installation/
 
-4. Train the model:
+4. Install the action server dependencies
+
+``pip install -r requirements-actions.txt``
+
+5. Train the model:
 
 ``rasa train``
 
-5. Open a second terminal window and start the action server:
+6. Open a second terminal window and start the action server:
 
 ``rasa run actions``
 
-6. Return to the first terminal window and start the assistant on the command line:
+7. Return to the first terminal window and start the assistant on the command line:
 
 ``rasa shell``
