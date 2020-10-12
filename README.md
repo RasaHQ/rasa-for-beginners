@@ -13,6 +13,7 @@ It uses a form to collect a user's daily health information and saves it to an A
 2. Make a copy of the `.example-env` and rename it `.env`. Add your Airtable API token, Base ID, and Table Name to the file.
 
 3. Install Rasa Open Source: https://rasa.com/docs/rasa/user-guide/installation/
+(note - this project is compatible with Rasa Open Source version 1.10.x. We plan to update this tutorial for the 2.0 release soon)
 
 4. Install the action server dependencies
 
