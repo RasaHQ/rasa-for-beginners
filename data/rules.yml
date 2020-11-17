@@ -1,0 +1,42 @@
+version: "2.0"
+rules:
+
+  - rule: Submit form
+    condition:
+    # Condition that form is active.
+    - active_loop: health_form
+    steps:
+    - action: health_form
+    - active_loop: null
+    # The action we want to run when the form is submitted.
+    - action: action_submit_results
+    - action: utter_slots_values
+  - rule: Greeting
+    steps:
+    - intent: greet
+    - action: utter_greet
+  - rule: Goodbye
+    steps:
+    - intent: goodbye
+    - action: utter_goodbye
+  - rule: Thanks
+    steps:
+    - intent: thankyou
+    - action: utter_no_worries
+    - action: utter_goodbye
+  - rule: Bot challenge
+    steps:
+    - intent: bot_challenge
+    - action: utter_iamabot
+  - rule: Ask exercise question
+    steps:
+    - intent: ask_exercise
+    - action: utter_exercise_info
+  - rule: Ask diet question
+    steps:
+    - intent: ask_eat_healthy
+    - action: utter_diet_info
+  - rule: ask stress question
+    steps:
+    - intent: ask_lower_stress
+    - action: utter_stress_info

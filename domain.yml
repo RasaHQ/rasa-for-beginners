@@ -1,3 +1,5 @@
+version: "2.0"
+
 intents:
   - greet
   - goodbye
@@ -62,21 +64,57 @@ responses:
 
 slots:
   confirm_exercise:
-    type: unfeaturized
+    type: any
   exercise:
-    type: unfeaturized
+    type: any
   sleep:
-    type: unfeaturized
+    type: any
   diet:
-    type: unfeaturized
+    type: any
   stress:
-    type: unfeaturized
+    type: any
   goal:
-    type: unfeaturized
+    type: any
 
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: false
 
+actions:
+- action_submit_results
+- validate_health_form
+
 forms:
-  - health_form
+  health_form:
+    confirm_exercise:
+      - type: from_intent
+        intent: affirm
+        value: True
+      - type: from_intent
+        intent: deny
+        value: False
+      - type: from_intent
+        intent: inform
+        value: True
+    exercise:
+      - type: from_entity
+        entity: exercise
+    sleep:
+      - type: from_entity
+        entity: sleep
+      - type: from_intent
+        intent: deny
+        value: None
+    stress:
+      - type: from_entity
+        entity: stress
+    diet:
+      - type: from_text
+        intent: 
+          - inform 
+          - affirm 
+          - deny
+    goal:
+      - type: from_text
+        intent: inform
+    
