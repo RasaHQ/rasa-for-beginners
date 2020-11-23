@@ -1,3 +1,6 @@
+# Version
+Compatible with Rasa Open Source version 2.1.0
+
 # Rasa for Beginners wellness-check-bot
 This assistant is a project for the Rasa for Beginners course. 
 
