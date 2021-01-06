@@ -40,9 +40,10 @@ def create_health_log(confirm_exercise, exercise, sleep, diet, stress, goal):
         response.raise_for_status()
     except requests.exceptions.HTTPError as err:
         raise SystemExit(err)
-    
-    return response
+        
     print(response.status_code)
+    return response
+    
 
 class HealthForm(FormAction):
 
